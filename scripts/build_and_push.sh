@@ -32,5 +32,5 @@ docker build \
   .
 
 if [ -z "$ONLY_BUILD" ]; then
-  echo docker push ${IMAGE_NAME}:${TAG}
+  docker push ${IMAGE_NAME}:${TAG}
 fi
